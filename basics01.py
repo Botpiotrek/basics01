@@ -1,9 +1,10 @@
-a = input ()
-a = int(a)
-b = input ()
-b = int(b)
-c = input ()
-if c == ("True"):
-    print (a+b)
-else:
-    print (a-b)
+def calculate(a, b, c):
+    if c:
+        print (a+b)
+    else:
+        print (a-b)
+
+a = int(input("podaj a: "))
+b = int(input("podaj b: "))
+c = bool(int(input("Dodawanie, wpisz 1, odejmowanie wpisz 0: ")))
+calculate(a ,b ,c)
